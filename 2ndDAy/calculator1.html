@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            padding-top: 15%;
+        }
+    </style>
+</head>
+<body>
+    
+        ENTER FIRST NUMBER: <input type="number" id="num1" placeholder="enter number">
+        ENTER SECOND NUMBER:<input type="number" id="num2" placeholder="enter number">
+        
+        <button id="add" onclick="add()">+</button>
+        <button id="sub"onclick="sub()">-</button>
+        <button id="mul"onclick="mul()">*</button>
+        <button id="div"onclick="div()">/</button>
+        <!-- <input type="text" id="result"> -->
+
+
+<script>
+    
+    
+    
+    function add(){
+        var a = document.getElementById("num1").value;
+         var b = document.getElementById("num2").value;
+         var k=parseInt(a);
+         var l=parseInt(b)
+         document.write(k+l)
+     }
+    // var result=document.getElementById("result").innerHTML=res;
+
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculation</title>
+  </head>
+  <body>
+    <form name="myform">
+      <input type="number" name="pr" /><br />
+      <input type="number" name="num" onkeyup="calc();" />
+    </form>
+    <br />
+    Result = <span id="res"></span><br />
+    Reminder = <span id="rem"></span>
+
+    <script>
+      function calc() {
+        var a = document.myform.num.value;
+        var p = document.myform.pr.value;
+        var result = Math.floor(p / a);
+        var rem = p % a;
+        document.getElementById("res").innerHTML = result;
+        document.getElementById("rem").innerHTML = rem;
+      }
+    </script>
+  </body>
+</html>

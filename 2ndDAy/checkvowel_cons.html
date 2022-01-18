@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>second project with js,css,html</title>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 220px;
+        font-size: 29px;
+        border: solid;
+
+        border-color: red;
+        border-width: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="heading">
+        <h1>check character vowel or consonent</h1>
+      </div>
+      <label>ENTER A CHARACTER</label>
+      <div id="firstbox">
+        <input type="text" placeholder="enter single character" />
+      </div>
+      <br />
+      <button id="button" onclick="vowelorcons()">answer</button>
+      <br />
+
+      <div id="secondbox"></div>
+    </div>
+    <script>
+      function vowelorcons() {
+        var c = document.getElementById("firstbox").value;
+        if (
+          c == "a" ||
+          c == "e" ||
+          c == "i" ||
+          c == "o" ||
+          c == "u" ||
+          c == "A" ||
+          c == "E" ||
+          c == "I" ||
+          c == "O" ||
+          c == "U"
+        ) {
+          document.getElementById("secondbox").innerHTML =
+            "character is vowel ";
+        } else {
+          document.getElementById("secondbox").innerHTML =
+            "character is consonant";
+        }
+      }
+    </script>
+  </body>
+</html>

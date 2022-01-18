@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    if(condition){ <br />
+   &nbsp; &nbsp; body of code for true <br />
+    }else{ <br />
+        &nbsp; &nbsp; body of code for false <br />
+    }
+    <br />
+    <form action="" name="myfrm" onsubmit="return chk();">
+      <input type="text" id="marks" />
+      <input type="submit" value="click" />
+    </form>
+    <script type="text/javascript">
+      function chk() {
+        var mrks = document.myfrm.marks.value;
+        console.log(mrks);
+        if (mrks == 100) {
+          document.write("yes you are passed");
+        } else {
+          document.write("Failed");
+        }
+      }
+    </script>
+  </body>
+</html>

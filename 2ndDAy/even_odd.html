@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter a number :<input type="text"placeholder="enter a number" id="num">
+    <br>
+    <button id="btn" onclick="leapyear()">check</button>
+    <span id="res"></span>
+    <script>
+       
+        //  function evenorodd(){
+        //     var num = document.getElementById("num").value;
+            
+        //     if(num%2==0){
+        //     document.getElementById("res").innerHTML="even number";
+        //     }else{
+        //         document.getElementById("res").innerHTML="odd number";
+        //     }
+        
+        //  }
+
+
+        // function primechk(){
+        //         var num = document.getElementById("num").value;
+        //         for(var i=2;i<num;i++){
+        //             if (num%i==0){
+        //                 break;
+        //             }
+        //         }
+        //         if(i==num){
+        //             document.getElementById("res").innerHTML=" prime number";
+        //         }else{
+        //             document.getElementById("res").innerHTML=" not Prime number";
+        //         }
+
+        // }
+
+
+        // function factchk(){
+        //     let sum =1;
+        //     var num = document.getElementById("num").value;
+        //     for(var i=1;i<=num;i++){ 
+        //         sum=sum*i;
+        //     }
+        //       var rem=num%10;
+            // var div=num/10;;
+        // }
+
+
+        // function reverse(){
+        //     let sum = 0;
+        //     var num = document.getElementById("num").value;
+        //     while(num != 0){
+        //         var rem = num%10;
+        //         sum = sum*10+rem;
+        //         var num= Math.floor(num/10);
+        //     }
+        //     document.getElementById("res").innerHTML="The reverse of the number is :"+sum
+            
+        // }
+
+
+
+
+        
+        // function perfect(){
+            
+        //     let sum = 0;
+        //     var num = document.getElementById("num").value;
+
+        //     for(var i=0;i<num;i++)
+        
+        //     {
+        //         if(num%i==0){
+        //         sum = sum+i;
+        //         }
+        //     }
+        //     if(sum==num)
+        //     {
+        //     document.getElementById("res").innerHTML= "number is perfect";
+        //     }else{
+        //         document.getElementById("res").innerHTML= "number is not perfect"; 
+        //     }
+        // }
+        // 0,1,1,2,3,5
+
+        // function fibonacci(){
+        //     let n1=0;
+        //     let n2=1;
+        //     let nextTerm;
+        //     const num =parseInt(document.getElementById("num").value);
+        //     for(let i=1;i<=num;i++){
+
+        //         document.write("<br>"+n1);
+        //         nextTerm=n1+n2;
+        //         n1=n2;
+        //         n2=nextTerm;
+                
+        //     }    
+        // }
+
+
+        // function palindrom(){
+        //     var num = document.getElementById("num").value;
+        //     var temp= num;
+        //     var sum= 0;
+        //     while(num!=0){
+        //       var rem = num%10;
+        //       sum= sum*10+rem;
+        //       num = Math.floor(num/10);
+        //     }
+        //     if(sum==temp) {
+        //     document.getElementById("res").innerHTML= "number is palindrom";
+        //     }else
+        //     {
+        //         document.getElementById("res").innerHTML= "number is not palindrom"; 
+        //     }
+
+        // }
+
+
+        //    function spy_no(){
+        //         var sum=0,mul=1,i;
+        //     var num = document.getElementById("num").value;
+        //     while(num>0){
+        //         var rem = num%10;
+        //         sum = sum+rem; 
+        //         mul = mul*rem;
+        //         num=Math.floor(num/10); 
+        //     }
+            
+        //     if(sum==mul){
+        //  var num = document.getElementById("num").value;
+        //     }else
+        //     {
+        //         document.getElementById("res").innerHTML= "not a spy number"; 
+        //     }
+
+        //    }
+
+
+        function leapyear(){
+            var year = document.getElementById("num").value;
+        if((year%4==0) && ((year%400==0) || (year%100!==0))){
+            document.getElementById("res").innerHTML= "Leap Year"; 
+        }else{
+            document.getElementById("res").innerHTML= "Not Leap year"; 
+        }
+        }
+    </script>
+
+
+    <!-- perfect number 28 = 14+2+4+7+1
+    spy number sum of digit = product of digit     1124= (4+2+1+1=8) (1*1*2*4=8)
+    armstrong number=153 = 1^3 +5^3+ 3^3(number digit to the power numbewr length)
+    pallindrome
+    fibonacci number 0 1 1 2 3 5 8 13 21  -->
+
+</body>
+</html

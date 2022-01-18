@@ -1,0 +1,16 @@
+JS variable are cotainers for storing data values
+
+Creating a variable in JS in called "declaring" a variable.
+
+we declare a "var" or "let" keyword:
+
+var i = 10.5;  (intiger, float)
+var i = "10.5"; (String)
+
+
+var i; //undefined
+
+All JS variable must be identified by unique name.
+
+These unique names are called identifiers
+var i = 10;

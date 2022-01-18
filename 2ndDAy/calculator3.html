@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first project with js,html,css</title>
+    <style>
+        .container{
+            text-align: center;
+            margin-top: 220px;
+            font-size: 29px;
+            color: aqua;
+            background-color:black;
+            
+        }
+        body{
+            background-color: aqua;       
+         }
+         button{
+            font-style: bold; 
+            padding: 10px;
+            color: black;
+            background-color: aqua;
+         }
+         @media(max-width:650px){
+             .heading{
+                 font-size: 19px;
+             }
+         }
+         
+
+        
+    </style>
+    
+</head>
+<body>
+   <div class="container">
+    <div class="heading"><h1>CALCULATOR</h1></div>
+  
+    <label>ENTER FIRST NUMBER:</label>
+    <input type="text"placeholder="enter single digit number"id="firstbox" name="firstbox">
+    <br>
+    <label>ENTER SECOND NUMBER:</label>
+    <input type="text"placeholder="enter single digit number  id="secondbox" name="secondbox" >
+    <br>
+    <button type="button"onclick="add()" >+</button>
+    <button type="button"onclick="sub()" >-</button>
+    <button type="button"onclick="mul()" >*</button>
+    <button type="button"onclick="div()" >/</button>
+    <button type="button"onclick="remainder()" >remainder</button>
+    <button type="button"onclick="persentage()" >persentage</button>
+    <br>
+    <label>THE NUMBER IS:</label>
+    <div id="thirdbox"></div>
+   </div>
+   
+   
+   <script>
+
+    function add(){
+        var a= document.getElementById("firstbox").value;
+        var b= document.getElementById("secondbox").value;
+        var c = parseInt(a) + parseInt(b);
+        document.getElementById("thirdbox").innerHTML=c;
+    }
+    function sub(){
+        var a= document.getElementById("firstbox").value;
+        var b= document.getElementById("secondbox").value;
+        var c = parseInt(a) - parseInt(b);
+        document.getElementById("thirdbox").innerHTML=c;
+    }
+    function mul(){
+        var a= document.getElementById("firstbox").value;
+        var b= document.getElementById("secondbox").value;
+        var c = parseInt(a) * parseInt(b);
+        document.getElementById("thirdbox").innerHTML=c;
+    }
+    function div(){
+        var a= document.getElementById("firstbox").value;
+        var b= document.getElementById("secondbox").value;
+        var c = parseInt(a) / parseInt(b);
+        document.getElementById("thirdbox").innerHTML=c;
+    }
+    function remainder(){
+        var a= document.getElementById("firstbox").value;
+        var b= document.getElementById("secondbox").value;
+        var c = parseInt(a) % parseInt(b);
+        document.getElementById("thirdbox").innerHTML=c;
+    }
+    function persentage(){
+        var a= document.getElementById("firstbox").value;
+        var b= document.getElementById("secondbox").value;
+        if (a>b)
+        {
+            alert(`please enter small number from ${b} in the first box`);
+        }else
+       {
+        var c = (parseInt(a) / parseInt(b))*100;
+        document.getElementById("thirdbox").innerHTML=c;
+       }
+    }
+</script>
+  
+    
+  
+</body>
+</html>
