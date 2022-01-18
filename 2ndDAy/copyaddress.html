@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=form, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myfrm" method="post">
+        NAME- <input type="text" name="nam"><br> 
+        ADDRESS- <textarea name="ad" id="" cols="" rows=""></textarea><br>
+        Same present address and permanent address <input type="checkbox" name="rem" onclick="same();">
+        <br>
+
+        NAME- <input type="text" name="cnam"><br> 
+        ADDRESS- <textarea name="cad" id="" cols="" rows=""></textarea><br>
+    </form>
+
+    <script>
+        function same(){
+            var name = document.myfrm.nam.value;
+            var address = document.myfrm.ad.value;
+            var s = document.myfrm.rem.checked;
+
+            if(s){
+                document.myfrm.cnam.value=name;
+                document.myfrm.cad.value=address;
+            }else{
+                document.myfrm.cnam.value= " ";
+                document.myfrm.cad.value= " ";
+            }
+        }
+    </script>
+</body>
+</html>
