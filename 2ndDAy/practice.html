@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = "sneha mondal";
+      let y = " i am a student";
+      let z = x.concat(y); //concat two string
+      console.log(z);
+      let o = `my name is ${x} and${y}`; //templete leterals
+      console.log(o);
+      let newstring = x.slice(0, 3); //slice method
+      let newstring4 = x.slice(-3);
+      console.log(newstring);
+      console.log(newstring4);
+      let newstring1 = x.substring(0, 3);
+      let newstring5 = x.substring(-7); //substring method
+      console.log(newstring1);
+      console.log(newstring5); //substring does not accept negetive value
+      console.log(x.length); //length to find out the length of the string
+      let newstr = x.toUpperCase();
+      console.log(newstr);
+      let greet = 'goodmorning "\sneha"\"'; //to show words or sentances with quotation
+      console.log(greet);
+
+      let dogs = "dogs are human's best friend";
+      console.log(dogs.replace("friend", "enemy"));
+
+      console.log(dogs.indexOf("are"));
+      console.log(dogs.lastIndexOf("are"));
+      console.log(dogs.trim());
+
+      console.log(dogs.charAt(0));
+      console.log(dogs.charCodeAt(5));
+
+      let header = "javascript";
+      let tag = ["javascript", "es6", "js"];
+      let html = `<h2>${header}</h2><ul>`;
+      for (const x of tag) {
+        html += `<li>${x}</li>`; //html = html+x
+      }
+      html += `</ul>`;
+      document.getElementById("demo").innerHTML = html;
+    </script>
+  </body>
+</html>
